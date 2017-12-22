@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="persw.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="imggallery.js"></script>
+</head>
+<title>HONGCHAO ZHANG'S Homepage</title>
+<body>
+
+<div class="header" >
+	<h1>HONGCHAO ZHANG'S Homepage</h1>
+	<h2>Intelligent Control System Based on Balancing Car<br>(10/2016-Present)</h2>
+</div> 
+<section>
+	<nav style="position:fixed; right: 0; width:25%; height:90px;">
+		<a href="/Users/droid/Desktop/personalweb_ps.html" >·Personal Resume</a><br>
+		<a href="/Users/droid/Desktop/personalweb_proj.html" >·Research Projects</a><br>
+		<a href="/Users/droid/Desktop/personalweb_acd.html" >·Academic Interests</a><br>
+	</nav>
+	<div style="position:relative; width:70%; height:100%; z-index:-1; left:0; top:0;">
+		<img id="picid" src="/Users/droid/Desktop/EricPW_files/IMG_LC4.png" style="left:0; top:0; height:100%;width:100%;opacity:1;">
+	</div>
+	<div>
+		<h1>Project Details</h1>
+	</div>
+	<div>
+		<p>
+			<b>Advisor: </b>Prof. Lu, Ningyun<br>
+			<b>Duties: </b>Diagnosed the control system, analyzed the model of the second order inverted pendulum, designed intelligent controller and applied machine learning to manipulate the parameter of controller<br>
+			<b>Achievements: </b>Realized the movement by different passengers in different road conditions with good stability and intelligence
+		</p>
+	</div>
+	<div id="container">  
+    	<canvas id="imgs" width="500" height="300" onclick="canvasClick()"></canvas>  
+	</div>  
+	<div class="imgGallery">  
+    	<span class="cover">
+    		<img src="/Users/droid/Desktop/EricPW_files/IMG_LC1.png" id="img1" width="125" height="150" onclick="iconClick(this.id)">
+    	</span>  
+	    <img src="/Users/droid/Desktop/EricPW_files/IMG_LC2.png" id="img2" width="125" height="150" onclick="iconClick(this.id)">  
+	    <img src="/Users/droid/Desktop/EricPW_files/IMG_LC3.png" id="img3" width="125" height="150" onclick="iconClick(this.id)">  
+	    <img src="/Users/droid/Desktop/EricPW_files/IMG_LC4.png" id="img4" width="125" height="150" onclick="iconClick(this.id)">
+	</div>
+</section>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body" style="text-align: center;">
+				<img id="displaypic" width="500px" style="opacity: 1">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<footer>
+<div>
+	EricDroid.com.cn<br>
+	Tel: 8613182991018<br>
+	Email:Droidrobotwork@outlook.com<br>
+	QQ:644082136<br>
+</div>
+	
+</footer>
+
+</body>
+</html>
