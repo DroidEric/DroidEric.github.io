@@ -1,5 +1,5 @@
 .header {
-    background-image: url(/Users/droid/Desktop/EricPW_files/timg.jpeg);
+    background-image: url(./EricPW_files/timg.jpeg);
     color:white;
     text-align:center;
     padding:5px; 
@@ -16,7 +16,7 @@ section {
     padding:10px; 
 }
 footer {
-    background-image: url(/Users/droid/Desktop/EricPW_files/timg.jpeg);
+    background-image: url(./EricPW_files/timg.jpeg);
     color:white;
     clear:both;
     text-align:center;
