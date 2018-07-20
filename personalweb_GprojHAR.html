@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+	<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/persw.css">
+	<script src="./JS/jquery.min.js"></script>
+	<script src="./JS/boot.js"></script>
+	<script src="./JS/imggallery.js"></script>
+</head>
+<title>HONGCHAO ZHANG'S Homepage</title>
+<body>
+
+<div class="header" >
+	<h1>HONGCHAO ZHANG'S Homepage</h1>
+	<h2>BS Graduation Project: Visual-based Human Pose Estimation and Action Recognition (12/2017-6/2018)</h2>
+</div> 
+<section>
+	<nav style="position:fixed; right: 0; width:25%; height:90px;">
+		<a href="./index.html" >·Personal Resume</a><br>
+		<a href="./personalweb_proj.html" >·Research Projects</a><br>
+		<a href="./personalweb_acd.html" >·Academic Interests</a><br>
+	</nav>
+	<div style="position:relative; width:50%; height:100%; z-index:-1; left:0; top:0;">
+		<img src="./EricPW_files/IMG_BGPHAR0.png" style="left:0; top:0; height:100%;width:100%">
+	</div>
+	<div>
+		<h1>Project Details</h1>
+	</div>
+	<div>
+		<p>
+			<b>Advisor: </b>Associate Prof. Peng, Cong<br>
+			<b>Abstract: </b>Human pose estimation and activity understanding are current research hot spot, with the surge in demand of video analysis, especially intelligent surveillance system for public places( such as hospitals and stations). Recently, with the development of deep learning, image processing has acquired outstanding achievements and is extended to time sequential video analysis. Though typical deep learning methods like CNN can ease blocking problem to some extent, balance or solutions of the three main problems(blocking, overlapping, large demand of computation) still remain enigma. This paper proposes a new strategy to examine the problems by splitting human pose estimation and activity understanding and then to solve them separately. We estimate human pose and generate training data by Openpose which is an open source platform. We designed a neutral network and train it for activity understanding based on skeleton data. Data visualization is supported by TensorBoard. Our work improve the accuracy and robustness of the system.<br>
+			<b>Key Words: </b>Human Pose Estimation; Activity Understanding; Deep Learning<br>
+		</p>
+	</div>
+	<div id="container">  
+    	<canvas id="imgs" width="500" height="300" onclick="canvasClick()"></canvas>  
+	</div>  
+	<div class="imgGallery">  
+    	<span class="cover">
+    		<img src="./EricPW_files/IMG_BGPHAR1.png" id="img1" width="125" height="150" onclick="iconClick(this.id)">
+    	</span>  
+	    <img src="./EricPW_files/IMG_BGPHAR2.png" id="img2" width="125" height="150" onclick="iconClick(this.id)">  
+	    <img src="./EricPW_files/IMG_BGPHAR3.png" id="img3" width="125" height="150" onclick="iconClick(this.id)">  
+	    <img src="./EricPW_files/IMG_BGPHAR4.png" id="img4" width="125" height="150" onclick="iconClick(this.id)">
+	</div >
+	<video style="width: 60vw; padding-top: 2vw " controls="controls">
+  		<source src="./EricPW_files/Video_BGPHAR1.mp4" type="video/mp4">
+  		BS Graduation Project: Visual-based Human Pose Estimation and Action Recognition
+	</video>
+</section>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body" style="text-align: center;">
+				<img id="displaypic" width="500px" style="opacity: 1">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>	
+<footer>
+<div>
+	DroidEric.github.io<br>
+	Tel: 8613182991018<br>
+	Email:Droidrobotwork@outlook.com<br>
+	QQ:644082136<br>
+</div>
+	
+</footer>
+
+</body>
+</html>
