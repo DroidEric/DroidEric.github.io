@@ -40,6 +40,7 @@ h2{
 }
 
 p{
+    font-size: 0.8em;
     padding-left: 0.8em;
     margin-top: 0.2vw;
     margin-bottom: 0.2vw;
@@ -94,3 +95,15 @@ img{ border:0;}
     z-index:1002; /* 数字的大小指明了div的相对层，数字大的在上层 */
     overflow: auto;
 }  
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
